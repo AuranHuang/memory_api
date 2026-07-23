@@ -1,0 +1,7 @@
+{
+  "language_model": "BAAI/bge-large-en-v1.5",
+  "siglip2_model": "google/siglip2-base-patch16-224",
+  "dinov2_model": "facebook/dinov2-base",
+  "device": "auto",
+  "auto_download": true
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flat-memory-api"
+version = "0.1.0"
+description = "Flat multimodal key-value memory processing and hierarchical retrieval API."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "h5py",
+  "Pillow",
+  "torch",
+  "transformers",
+  "sentence-transformers",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["memory_api"]
+
+[tool.setuptools.package-dir]
+memory_api = "."
+
+[tool.setuptools.package-data]
+memory_api = ["encoder_config.json", "memory_bank_flat/*.json", "memory_bank_flat/*.hdf5"]
