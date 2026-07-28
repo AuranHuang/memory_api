@@ -10,6 +10,14 @@ This package provides two operations:
 The input is assumed to already use the flat value format. There is no task,
 demo, step, conversion, or sampling logic in this package.
 
+## Workflow
+
+The complete key-processing and retrieval workflow is illustrated below.
+
+<p align="center">
+  <img src="memory_api_workflow.png" alt="Flat Memory API workflow" width="900">
+</p>
+
 ## 1. Installation
 
 Python 3.10 or newer is recommended. Run commands from the directory containing
